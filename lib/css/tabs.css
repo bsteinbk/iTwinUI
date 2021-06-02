@@ -1,0 +1,303 @@
+/*---------------------------------------------------------------------------------------------
+ * Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+ * See LICENSE.md in the project root for license terms and full copyright notice.
+ *--------------------------------------------------------------------------------------------*/
+.iui-tabs-horizontal{
+  margin:0;
+  padding:0;
+  border:none;
+  vertical-align:baseline;
+  font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display:flex;
+  list-style:none;
+  padding:0;
+  margin:6px 0 0 0;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none; }
+  .iui-tabs-horizontal > li{
+    display:inline-block;
+    position:relative;
+    padding:0;
+    margin:0; }
+    .iui-tabs-horizontal > li > a{
+      display:block;
+      position:relative;
+      padding:5.5px 16px;
+      box-sizing:border-box;
+      font-size:14px;
+      line-height:22px;
+      cursor:pointer;
+      color:rgba(0, 0, 0, 0.8);
+      color:var(--iui-text-color);
+      transition:color 0.2s ease-out, background-color 0.2s ease-out; }
+      .iui-tabs-horizontal > li > a::after{
+        content:'';
+        position:absolute;
+        z-index:1;
+        transition:all 0.2s;
+        height:2px;
+        opacity:0;
+        background-color:#008BE1;
+        background-color:var(--iui-color-foreground-primary); }
+      .iui-tabs-horizontal > li > a:hover{
+        text-decoration:none;
+        color:#008BE1;
+        fill:#008BE1;
+        color:var(--iui-color-foreground-primary);
+        fill:var(--iui-icons-color-primary);
+        transition:color 0.2s ease-out, background-color 0.2s ease-out; }
+    .iui-tabs-horizontal > li.iui-tabs-active > a{
+      font-weight:700;
+      cursor:default; }
+      .iui-tabs-horizontal > li.iui-tabs-active > a:hover{
+        color:rgba(0, 0, 0, 0.8);
+        color:var(--iui-text-color); }
+      .iui-tabs-horizontal > li.iui-tabs-active > a::after{
+        opacity:1;
+        opacity:var(--iui-opacity-1); }
+  .iui-tabs-horizontal.iui-green > li > a:hover{
+    color:#53A21A;
+    fill:#53A21A;
+    color:var(--iui-color-foreground-positive);
+    fill:var(--iui-icons-color-positive); }
+  .iui-tabs-horizontal.iui-green > li > a::after{
+    background-color:#53A21A;
+    background-color:var(--iui-color-foreground-positive); }
+  .iui-tabs-horizontal.iui-green > li.iui-tabs-active > a:hover{
+    color:rgba(0, 0, 0, 0.8);
+    color:var(--iui-text-color); }
+  .iui-tabs-horizontal > li > a{
+    line-height:22px;
+    background-color:#F8F9FB;
+    border:1px solid #C7CCD1;
+    background-color:var(--iui-color-background-2);
+    border:1px solid var(--iui-color-background-5); }
+    .iui-tabs-horizontal > li > a:hover{
+      background-color:#FFF;
+      background-color:var(--iui-color-background-1); }
+    .iui-tabs-horizontal > li > a::after{
+      top:0;
+      left:0;
+      width:100%; }
+  .iui-tabs-horizontal > li:not(:last-child) > a{
+    border-right:none; }
+  .iui-tabs-horizontal > li.iui-tabs-active > a{
+    border-bottom:1px solid #FFF;
+    background-color:#FFF;
+    border-bottom:1px solid var(--iui-color-background-1);
+    background-color:var(--iui-color-background-1); }
+
+.iui-tabs-borderless{
+  margin:0;
+  padding:0;
+  border:none;
+  vertical-align:baseline;
+  font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display:flex;
+  list-style:none;
+  padding:0;
+  margin:6px 0 0 0;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+  margin:5.5px 0; }
+  .iui-tabs-borderless > li{
+    display:inline-block;
+    position:relative;
+    padding:0;
+    margin:0; }
+    .iui-tabs-borderless > li > a{
+      display:block;
+      position:relative;
+      padding:5.5px 16px;
+      box-sizing:border-box;
+      font-size:14px;
+      line-height:22px;
+      cursor:pointer;
+      color:rgba(0, 0, 0, 0.8);
+      color:var(--iui-text-color);
+      transition:color 0.2s ease-out, background-color 0.2s ease-out; }
+      .iui-tabs-borderless > li > a::after{
+        content:'';
+        position:absolute;
+        z-index:1;
+        transition:all 0.2s;
+        height:2px;
+        opacity:0;
+        background-color:#008BE1;
+        background-color:var(--iui-color-foreground-primary); }
+      .iui-tabs-borderless > li > a:hover{
+        text-decoration:none;
+        color:#008BE1;
+        fill:#008BE1;
+        color:var(--iui-color-foreground-primary);
+        fill:var(--iui-icons-color-primary);
+        transition:color 0.2s ease-out, background-color 0.2s ease-out; }
+    .iui-tabs-borderless > li.iui-tabs-active > a{
+      font-weight:700;
+      cursor:default; }
+      .iui-tabs-borderless > li.iui-tabs-active > a:hover{
+        color:rgba(0, 0, 0, 0.8);
+        color:var(--iui-text-color); }
+      .iui-tabs-borderless > li.iui-tabs-active > a::after{
+        opacity:1;
+        opacity:var(--iui-opacity-1); }
+  .iui-tabs-borderless.iui-green > li > a:hover{
+    color:#53A21A;
+    fill:#53A21A;
+    color:var(--iui-color-foreground-positive);
+    fill:var(--iui-icons-color-positive); }
+  .iui-tabs-borderless.iui-green > li > a::after{
+    background-color:#53A21A;
+    background-color:var(--iui-color-foreground-positive); }
+  .iui-tabs-borderless.iui-green > li.iui-tabs-active > a:hover{
+    color:rgba(0, 0, 0, 0.8);
+    color:var(--iui-text-color); }
+  .iui-tabs-borderless > li > a{
+    line-height:22px;
+    padding:22px 24px; }
+    .iui-tabs-borderless > li > a:hover{
+      background-color:rgba(0, 139, 225, 0.1);
+      background-color:rgba(var(--iui-color-foreground-primary-rgb), var(--iui-opacity-6)); }
+    .iui-tabs-borderless > li > a::after{
+      bottom:2px;
+      left:2px;
+      right:2px; }
+  .iui-tabs-borderless > li.iui-tabs-active > a{
+    background-color:rgba(0, 139, 225, 0.1);
+    background-color:rgba(var(--iui-color-foreground-primary-rgb), var(--iui-opacity-6)); }
+  .iui-tabs-borderless.iui-green > li > a:hover,
+  .iui-tabs-borderless.iui-green > li.iui-tabs-active > a{
+    background-color:rgba(83, 162, 26, 0.1);
+    background-color:rgba(var(--iui-color-foreground-positive-rgb), var(--iui-opacity-6)); }
+
+.iui-tabs-pill{
+  margin:0;
+  padding:0;
+  border:none;
+  vertical-align:baseline;
+  font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display:flex;
+  list-style:none;
+  padding:0;
+  margin:6px 0 0 0;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+  display:flex;
+  flex-flow:row;
+  justify-content:space-evenly;
+  margin:5.5px 0; }
+  .iui-tabs-pill > li{
+    display:inline-block;
+    position:relative;
+    padding:0;
+    margin:0; }
+    .iui-tabs-pill > li > a{
+      display:block;
+      position:relative;
+      padding:5.5px 16px;
+      box-sizing:border-box;
+      font-size:14px;
+      line-height:22px;
+      cursor:pointer;
+      color:rgba(0, 0, 0, 0.8);
+      color:var(--iui-text-color);
+      transition:color 0.2s ease-out, background-color 0.2s ease-out; }
+      .iui-tabs-pill > li > a::after{
+        content:'';
+        position:absolute;
+        z-index:1;
+        transition:all 0.2s;
+        height:2px;
+        opacity:0;
+        background-color:#008BE1;
+        background-color:var(--iui-color-foreground-primary); }
+      .iui-tabs-pill > li > a:hover{
+        text-decoration:none;
+        color:#008BE1;
+        fill:#008BE1;
+        color:var(--iui-color-foreground-primary);
+        fill:var(--iui-icons-color-primary);
+        transition:color 0.2s ease-out, background-color 0.2s ease-out; }
+    .iui-tabs-pill > li.iui-tabs-active > a{
+      font-weight:700;
+      cursor:default; }
+      .iui-tabs-pill > li.iui-tabs-active > a:hover{
+        color:rgba(0, 0, 0, 0.8);
+        color:var(--iui-text-color); }
+      .iui-tabs-pill > li.iui-tabs-active > a::after{
+        opacity:1;
+        opacity:var(--iui-opacity-1); }
+  .iui-tabs-pill.iui-green > li > a:hover{
+    color:#53A21A;
+    fill:#53A21A;
+    color:var(--iui-color-foreground-positive);
+    fill:var(--iui-icons-color-positive); }
+  .iui-tabs-pill.iui-green > li > a::after{
+    background-color:#53A21A;
+    background-color:var(--iui-color-foreground-positive); }
+  .iui-tabs-pill.iui-green > li.iui-tabs-active > a:hover{
+    color:rgba(0, 0, 0, 0.8);
+    color:var(--iui-text-color); }
+  .iui-tabs-pill > li{
+    margin:0;
+    text-align:center;
+    flex:1 1 0; }
+    .iui-tabs-pill > li > a{
+      line-height:22px;
+      padding:11px 0;
+      background-color:#FFF;
+      background-color:var(--iui-color-background-1); }
+      .iui-tabs-pill > li > a > svg{
+        fill:rgba(0, 0, 0, 0.8);
+        fill:var(--iui-icons-color-actionable);
+        transition:fill 0.2s ease-out;
+        width:16px;
+        height:16px; }
+      .iui-tabs-pill > li > a::after{
+        bottom:2px;
+        left:2px;
+        right:2px; }
+      .iui-tabs-pill > li > a:hover{
+        color:#008BE1;
+        color:var(--iui-color-foreground-primary); }
+        .iui-tabs-pill > li > a:hover > svg{
+          fill:#008BE1;
+          fill:var(--iui-icons-color-primary);
+          transition:fill 0.2s ease-out; }
+    .iui-tabs-pill > li.iui-tabs-active > a{
+      font-weight:400;
+      color:#008BE1;
+      color:var(--iui-color-foreground-primary); }
+      .iui-tabs-pill > li.iui-tabs-active > a:hover{
+        color:#008BE1;
+        color:var(--iui-color-foreground-primary); }
+      .iui-tabs-pill > li.iui-tabs-active > a svg{
+        fill:#008BE1;
+        fill:var(--iui-icons-color-primary); }
+  .iui-tabs-pill.iui-green > .iui-tabs-active > a{
+    color:#53A21A;
+    color:var(--iui-color-foreground-positive); }
+    .iui-tabs-pill.iui-green > .iui-tabs-active > a:hover{
+      color:#53A21A;
+      color:var(--iui-color-foreground-positive); }
+    .iui-tabs-pill.iui-green > .iui-tabs-active > a svg{
+      fill:#53A21A;
+      fill:var(--iui-icons-color-positive); }
+  .iui-tabs-pill.iui-green > li > a:hover > svg{
+    fill:#53A21A;
+    fill:var(--iui-icons-color-positive); }
+
+.iui-tabs-content-area{
+  box-sizing:border-box;
+  padding:11px 16px;
+  margin-top:-1px;
+  background-color:#FFF;
+  border:1px solid #C7CCD1;
+  background-color:var(--iui-color-background-1);
+  border:1px solid var(--iui-color-background-5); }

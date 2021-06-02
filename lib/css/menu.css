@@ -1,0 +1,70 @@
+/*---------------------------------------------------------------------------------------------
+ * Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+ * See LICENSE.md in the project root for license terms and full copyright notice.
+ *--------------------------------------------------------------------------------------------*/
+.iui-menu{
+  margin:0;
+  padding:0;
+  border:none;
+  vertical-align:baseline;
+  font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-shadow:0 1px 5px rgba(0, 0, 0, 0.25);
+  background-color:#FFF;
+  background-color:var(--iui-color-background-1);
+  list-style-type:none;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+  width:100%;
+  margin:0;
+  padding:0; }
+  .iui-menu > li{
+    display:flex;
+    align-items:center;
+    font-size:14px;
+    padding:8px 12px;
+    cursor:pointer;
+    color:rgba(0, 0, 0, 0.8);
+    color:var(--iui-text-color); }
+    .iui-menu > li > .iui-icon{
+      width:16px;
+      height:16px;
+      margin-right:8px;
+      flex:0 0 auto;
+      fill:rgba(0, 0, 0, 0.8);
+      fill:var(--iui-icons-color-actionable); }
+    .iui-menu > li > .iui-content{
+      flex:1 1 auto;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      height:22px; }
+      .iui-menu > li > .iui-content + .iui-icon{
+        margin-right:0;
+        margin-left:8px; }
+    .iui-menu > li:hover:not(.iui-disabled):not(.iui-active), .iui-menu > li:focus:not(.iui-disabled):not(.iui-active){
+      background-color:rgba(0, 139, 225, 0.1);
+      background-color:rgba(var(--iui-color-foreground-primary-rgb), var(--iui-opacity-6)); }
+    .iui-menu > li:focus{
+      outline:none; }
+    .iui-menu > li.iui-active{
+      box-sizing:border-box;
+      padding-top:7px;
+      padding-bottom:7px;
+      background-color:rgba(0, 139, 225, 0.2);
+      border:solid 1px #008BE1;
+      background-color:rgba(var(--iui-color-foreground-primary-rgb), var(--iui-opacity-5));
+      border:solid 1px var(--iui-color-foreground-primary); }
+      .iui-menu > li.iui-active > .iui-icon{
+        fill:#008BE1;
+        fill:var(--iui-icons-color-primary); }
+    .iui-menu > li.iui-disabled{
+      cursor:not-allowed;
+      background-color:#EEF0F3;
+      color:rgba(0, 0, 0, 0.4);
+      background-color:var(--iui-color-background-disabled);
+      color:var(--iui-text-color-muted); }
+      .iui-menu > li.iui-disabled > .iui-icon{
+        fill:rgba(0, 0, 0, 0.2);
+        fill:var(--iui-icons-color-actionable-disabled); }
